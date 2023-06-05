@@ -1,0 +1,93 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  
+  .background {
+    background: url("Human-Brain-Anatomy-X-ray.jpg")
+      rgba(0, 0, 0, 0.61);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    filter: blur(5px);
+    min-height: 800px;
+  
+  }
+  
+  .container {
+    display: flex;
+    padding: 80px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 500px;
+    width: 600px;
+    margin: 10vh auto;
+    background: transparent;
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    border-radius: 25px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  
+  form {
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .form-item {
+    display: flex;
+    width: 100%;
+    background: transparent;
+    margin: 10px auto;
+    border-radius: 15px;
+    align-items: center;
+    border-bottom: 1px solid rgb(82, 81, 81);
+  }
+  .form-item:hover {
+    border: 1px solid rgb(82, 81, 81);
+  }
+  
+  input {
+    background: transparent;
+    width: 80%;
+    height: 30px;
+    outline: none;
+    border: none;
+    margin: auto;
+    color: white;
+    font-size: 17px;
+  }
+
+  button[type="submit"] {
+    width: 180px;
+    font-size: 20px;
+    margin: 10px auto;
+    padding: 8px;
+    background: rgba(122, 123, 116, 0.72);
+    border: none;
+    color: white;
+  }
+  button[type="submit"]:hover {
+    background: rgba(222, 236, 34, 0.678);
+  }
+  h3 {
+    font-size: 23px;
+    margin: 5px;
+    text-align: left;
+  }
+  p {
+    font-size: 20px;
+    margin: 5px;
+    text-align: left
+  }

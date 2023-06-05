@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+  <title>Result</title>
+
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="container">
+      <h2>Result</h2>
+      <form>
+        <div>
+          {% if y=="Mild_Demented" %}
+          <h3>Brain Tumor</h3>
+          <p>Absent</p>
+          <h3>Alzheimer's Disease</h3>
+          <p>Mild</p>
+          {% endif %}
+          {% if y=="Moderate_Demented" %}
+          <h3>Brain Tumor</h3>
+          <p>Absent</p>
+          <h3>Alzheimer's Disease</h3>
+          <p>Moderate</p>
+          {% endif %}
+          {% if y=="Normal" %}
+          <h3>Brain Tumor</h3>
+          <p>Absent</p>
+          <h3>Alzheimer's Disease</h3>
+          <p>Absent</p>
+          {% endif %}
+          {% if y=="Tumor" %}
+          <h3>Brain Tumor</h3>
+          <p>Present</p>
+          <h3>Alzheimer's Disease</h3>
+          <p>Absent</p>
+          {% endif %}
+          {% if y=="Tumor_mild" %}
+          <h3>Brain Tumor</h3>
+          <p>Present</p>
+          <h3>Alzheimer's Disease</h3>
+          <p>Mild</p>
+          {% endif %}
+          {% if y=="Tumor_verymild" %}
+          <h3>Brain Tumor</h3>
+          <p>Present</p>
+          <h3>Alzheimer's Disease</h3>
+          <p>Very Mild</p>
+          {% endif %}
+          {% if y=="Very_Mild_Demented" %}
+          <h3>Brain Tumor</h3>
+          <p>Absent</p>
+          <h3>Alzheimer's Disease</h3>
+          <p>Very Mild</p>
+          {% endif %}
+        </div>
+      </form>
+    </div>
+  </body>
+  
+  </html>
